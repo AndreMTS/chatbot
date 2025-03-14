@@ -1,0 +1,88 @@
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.message .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.message .content {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.message.sent {
+    flex-direction: row-reverse;
+}
+
+.message.sent .content {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+    max-width: 80%;
+}
+
+.message.received .content {
+    background-color: #f8f9fa;
+    max-width: 80%;
+}
+
+.message blockquote {
+    border-left: 3px solid #6c757d;
+    margin: 0.5em 0;
+    padding-left: 1em;
+    color: #6c757d;
+}
+
+.message.sent blockquote {
+    border-left-color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.9);
+}
+
+.audio-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.audio-message audio {
+    max-width: 200px;
+}
+
+.message.received .audio-message {
+    justify-content: flex-start;
+}
+
+.message.sent .audio-message {
+    justify-content: flex-end;
+}
+
+#connection-status {
+    font-size: 0.8rem;
+}
+
+#connection-status.connected {
+    background-color: #198754 !important;
+}
+
+#connection-status.disconnected {
+    background-color: #dc3545 !important;
+}
