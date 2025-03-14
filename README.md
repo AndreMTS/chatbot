@@ -33,14 +33,15 @@ Interface de chat interativa para integração com webhooks e APIs, oferecendo s
 
 1. Clone o repositório:
 
-bash
-git clone https://github.com/AndreMTS/chatbot.git
-cd chatbot
+• bash
+• git clone https://github.com/AndreMTS/chatbot.git
+• cd chatbot
 
 2. Instale as dependências do backend:
-bash
-cd backend
-npm install
+
+• bash
+• cd backend
+• npm install
 
 3. Configure o webhook:
    - Abra o arquivo `backend/server.js`
@@ -48,8 +49,8 @@ npm install
 
 4. Inicie o servidor:
 
-bash
-npm start
+• bash
+• npm start
 
 5. Acesse a aplicação:
    - Abra `http://localhost:3000` no seu navegador
