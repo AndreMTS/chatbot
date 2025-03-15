@@ -2,6 +2,8 @@
 
 Interface de chat interativa para integração com webhooks e APIs, oferecendo suporte a mensagens de texto e áudio.
 
+<img src="/assets/gif/demostracaoChat.gif">
+
 ## 🚀 Funcionalidades
 
 - 💬 Suporte a mensagens de texto com formatação Markdown
